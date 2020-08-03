@@ -1,0 +1,53 @@
+@-webkit-keyframes mycolor {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes mycolor {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.animation-scale-up {
+  -webkit-animation-name: scale-up;
+          animation-name: scale-up;
+}
+.animation-delay {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.homeList {
+  padding: 10rpx;
+  background: #fff;
+  overflow: hidden;
+}
+.homeList .listContent {
+  box-sizing: border-box;
+  width: 47%;
+  float: left;
+  margin: 10rpx;
+  padding: 50rpx 70rpx;
+  border-radius: 10rpx;
+  background: rgba(240, 5, 5, 0.5);
+  text-align: center;
+  -webkit-animation-name: mycolor;
+          animation-name: mycolor;
+}
+.homeList .listContent .title {
+  font-weight: bold;
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <swiper class="swiper" indicator-color="#999" indicator-active-color="#333" circular="{{true}}" autoplay="{{true}}" interval="5000">
+            <swiper-item wx:key="id" bindtap="anonymousFunc0" wx:for="{{loopArray3}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                <view class="swiper-img" style="{{item.$loopState__temp2}}">
+                    <view class="content">
+                        <view class="title">{{item.$original.title}}</view>
+                        <view class="time">{{item.$loopState__temp4}}</view>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+</block>

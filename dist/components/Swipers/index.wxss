@@ -1,0 +1,63 @@
+@-webkit-keyframes myStyle {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes myStyle {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.swiper {
+  margin-top: -40rpx;
+  height: 440rpx;
+}
+.swiper .swiper-img {
+  position: relative;
+  height: 380rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-shadow: 4rpx 8rpx 26rpx rgba(0, 0, 0, 0.3);
+}
+.swiper .swiper-img .img {
+  height: 100%;
+  width: 100%;
+}
+.swiper .swiper-img .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(254, 254, 254, 0), rgba(255, 255, 255, 0));
+}
+.swiper .swiper-img .content .title {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  margin-left: 40rpx;
+  font-weight: bold;
+  color: #ffffff;
+}
+.swiper .swiper-img .content .time {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  font-weight: bold;
+  color: #ffff;
+  font-size: 26rpx;
+}

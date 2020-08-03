@@ -1,0 +1,19 @@
+@import 'taro-ui/dist/style/index.scss';
+@import '~taro-parse/dist/style/main.scss';
+.taro_page {
+    height: 100%;
+    background: #f1f1f1 ;
+}
+// 兼容小程序
+page{
+    // height: 100%;
+    background: #f1f1f1 ;
+}
+.at-nav-bar{
+    background: #ededed ;
+    // height: 120px;
+    padding-top:80px;
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari 隐藏滑动条*/
+}

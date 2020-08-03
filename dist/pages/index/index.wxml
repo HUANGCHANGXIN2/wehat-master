@@ -1,0 +1,62 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index">
+        <view class="nav" style="{{anonymousState__temp}}" bindtouchstart="anonymousFunc0" bindtouchend="anonymousFunc1">
+            <view class="nav-list">
+                <view class="list-wxsq">
+                    <view class="list-wxsq-title" style="{{anonymousState__temp2}}">
+                        <at-avatar compid="{{$compid__111}}"></at-avatar>
+                        <view class="title-right">
+                            <view>{{LoginInfo.nickName}}</view>
+                        </view>
+                    </view>
+                    <view style="{{anonymousState__temp3}}">
+                        <block wx:if="{{isWeapp}}">
+                            <weapp-login-button compid="{{$compid__112}}"></weapp-login-button>
+                        </block>{{" "}}
+                        <block wx:if="{{isWeb}}">
+                            <p>登录</p>
+                        </block>
+                    </view>
+                </view>
+                <view class="list-data">
+                    <at-list>
+                        <button open-type="contact">11</button>
+                        <at-list-item compid="{{$compid__113}}"></at-list-item>
+                        <at-list-item compid="{{$compid__114}}"></at-list-item>
+                        <at-list-item compid="{{$compid__115}}"></at-list-item>
+                        <at-list-item compid="{{$compid__116}}"></at-list-item>
+                        <at-list-item compid="{{$compid__117}}"></at-list-item>
+                    </at-list>
+                </view>
+            </view>
+            <view class="nav-bottom">WeHello</view>
+        </view>
+        <view class="content" style="{{anonymousState__temp9}}">
+            <view class="modal" style="{{anonymousState__temp10}}" bindtap="anonymousFunc3"></view>
+            <view class="title" bindtouchstart="anonymousFunc4" bindtouchend="anonymousFunc5">
+                <view bindtap="anonymousFunc6" class="content-avatar">
+                    <at-avatar compid="{{$compid__118}}"></at-avatar>
+                </view>
+                <view class="title-content">
+                    <view>我和她和猫</view>
+                    <view class="jinrishici">{{jinrishici}}</view>
+                </view>
+            </view>
+            <view class="index-swiper">
+                <home-swiper compid="{{$compid__119}}"></home-swiper>
+            </view>
+            <view>
+                <search compid="{{$compid__120}}"></search>
+            </view>
+            <view>
+                <view class="index-tab">
+                    <view style="{{anonymousState__temp11}}" bindtap="anonymousFunc7">学海无涯</view>
+                    <view style="{{anonymousState__temp12}}" bindtap="anonymousFunc8">回头是岸</view>
+                </view>
+                <view class="index-list" bindtouchstart="anonymousFunc9" bindtouchend="anonymousFunc10">
+                    <home-list compid="{{$compid__121}}"></home-list>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

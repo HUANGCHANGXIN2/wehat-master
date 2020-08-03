@@ -1,0 +1,10 @@
+.login-button {
+  width: 180rpx;
+  height: 65rpx;
+  font-size: 24rpx;
+  line-height: 65rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 30rpx;
+  border: none;
+}

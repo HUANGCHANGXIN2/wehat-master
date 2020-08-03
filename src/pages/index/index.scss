@@ -1,0 +1,184 @@
+.index {
+    // height: 100%;
+    // overflow: hidden;
+    .nav {
+        // z-index: 99;
+        position: fixed;
+        height: 88%;
+        width: 500px;
+        top: 10%;
+        left: 5%;
+        transform: scale(0.9, 0.9) translateX(-100%);
+        opacity: 0;
+        transition: all 0.4s;
+        background: #f1f1f1;
+        font-size: 24px;
+        text-align: center;
+
+        .nav-list {
+            box-sizing: border-box;
+            color: #8799a3;
+            height: 900px;
+            width: 500px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 4px 8px 26px rgba(0, 0, 0, 0.300);
+            padding: 30px;
+
+            .list-title {
+                font-size: 24px;
+                // text-align: center;
+            }
+
+            .list-wxsq {
+                width: 100%;
+                padding-bottom: 30px;
+
+                .list-wxsq-title {
+                    display: flex;
+                    justify-items: start;
+                    align-items: center;
+                    .title-right {
+                        margin-left: 20px;
+                        font-size: 32px;
+                    }
+                }
+
+                p {
+                    width: 180px;
+                    height: 65px;
+                    line-height: 65px;
+                    border-radius: 50px;
+                    text-align: center;
+                    background: #39b54a;
+                    color: #fff;
+                    font-size: 26px;
+                    margin: 0 auto;
+                }
+            }
+
+            .list-data {
+                font-size: 26px;
+
+                button {
+                    position: absolute;
+                    width: 100%;
+                    top: 88px;
+                    z-index: 99;
+                    opacity: 0;
+                }
+            }
+
+            .at-list__item--thumb .item-thumb {
+                margin-right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .at-list__item {
+                color: #8799a3 !important;
+                font-size: 26px;
+            }
+
+            .at-list__item-content {
+                margin-right: 200px;
+            }
+        }
+
+        .nav-bottom {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            color: #40a9ff;
+        }
+    }
+
+    .content {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        transform: scale(1, 1) translateX(0%);
+        transition: all 0.4s;
+        position: fixed;
+        overflow-y: scroll;
+        /*解决ios上滑动不流畅*/
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* firefox 隐藏滑动条*/
+        -ms-overflow-style: none; /* IE 10+ 隐藏滑动条*/
+        .modal{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: #f1f1f1;
+            opacity: .3;
+            z-index: 99999;
+            display: none;
+        }
+        .content-avatar {
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .title {
+            height: 350px;
+            background: url('https://blog.ykxingxin.cn/upload/2020/07/%E5%87%9B-331cf1eeee5d40c2abe8560fd171d7da.jpg') no-repeat;
+            background-size: 100%;
+            padding: 20px;
+
+            .title-content {
+                text-align: center;
+                font-weight: bold;
+                color: #fff;
+                text-shadow: 4px 8px 20px rgba(0, 0, 0, 100);
+                font-size: 50px;
+
+                .jinrishici {
+                    font-size: 36px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+
+        .index-swiper {
+            // height: 100%;
+        }
+        .index-tab{
+            display: flex;
+            justify-items: center;
+            width: 100%;
+            margin: 20px 0;
+            view{
+                text-align: center;
+                width: 50%;
+                font-size: 32px;
+                font-weight: bold;
+                color: #666;
+                // text-shadow: 4px 8px 20px rgba(0, 0, 0, 100);
+            }
+        }
+        .index-list {
+            background: #fff;
+        }
+
+        .post-button {
+            position: fixed;
+            right: 60px;
+            bottom: 150px;
+        }
+    }
+
+    // 覆盖taro ui 样式必须写在page注册过的页面里 否则在小程序里不生效
+    .at-search-bar__action {
+        border-radius: 50px;
+        width: 80px;
+        text-align: center;
+        background: #40a9ff;
+        box-shadow: 4px 8px 26px rgba(64, 169, 255, 0.300);
+    }
+    image {
+        display: inline;
+    }
+
+}

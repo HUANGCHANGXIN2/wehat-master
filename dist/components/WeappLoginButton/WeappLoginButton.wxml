@@ -1,0 +1,6 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="title">允许微信授权后，可体验更多功能</view>
+        <button open-type="getUserInfo" bindgetuserinfo="anonymousFunc0" type="primary" class="login-button">微信登录</button>
+    </view>
+</block>
